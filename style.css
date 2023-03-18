@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* resets and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* Specify font for the page */
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* mobile styles */
+body {
+  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(157deg, rgb(90, 31, 224) 0%, rgb(0, 0, 0) 100%);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #ffffff;
+  padding: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  padding: 6rem 0 1rem 0;
+  line-height: 1.2;
+}
+
+.header__heading {
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.header__text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4rem 0 4rem 0;
+}
+
+.main__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main__heading {
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+}
+
+.main__inputs {}
+
+.main__input {
+  display: block;
+  padding: 1.2rem;
+  font-size: 30px;
+  font-weight: 300;
+  width: 100%;
+  border-radius: .5rem;
+  outline: none;
+  border: none;
+}
+
+.main__input:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.input__submit {
+  background-color: rgb(90, 31, 224);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.main__img {
+  width: 100%;
+}
+
+.main__img img {
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  fill: #ffffff;
+}
+
+.icons>* {
+  width: 30px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    padding: 3rem;
+  }
+
+  .header__heading {
+    font-size: 50px;
+  }
+
+
+}
+
+@media screen and (min-width: 868px) {
+
+  .header__heading {
+    font-size: 60px;
+  }
+
+  .header__text {
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
+  .main__form {
+    width: 50%;
+  }
+
+  .main__img {
+    width: 50%;
+  }
+}
